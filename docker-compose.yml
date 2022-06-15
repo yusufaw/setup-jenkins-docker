@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jenkins:
+    image: jenkins/jenkins:alpine
+    container_name: jenkins
+    ports:
+      - 9090:8080
+      - 50000:50000
+    volumes:
+      - /home/fi0smith/jenkins-backup:/var/jenkins_home
